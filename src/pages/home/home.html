@@ -7,14 +7,18 @@
 </ion-header>
 
 <ion-content padding>
+  <button ion-button block (click)="borrrarudios()" >borrar </button>
   <ion-list>
     <div *ngFor="let cl of global">
         <ion-list-header>
             {{ cl.title }}
           </ion-list-header>
           <ion-item *ngFor="let clu of cl.list" >{{ clu.title }}<ion-avatar item-end> 
-             <button ion-button block (click)="play(clu.sing)" ><ion-icon name="play" ></ion-icon></button>  </ion-avatar>
+             <button ion-button block (click)="play(clu.sing)" ><ion-icon name="play" ></ion-icon></button>  
+             <button ion-button block color="secondary" (click)="play2(clu.sing)" ><ion-icon name="play" ></ion-icon></button>  
+            </ion-avatar>
            </ion-item>        
     </div>    
   </ion-list>
 </ion-content>
+

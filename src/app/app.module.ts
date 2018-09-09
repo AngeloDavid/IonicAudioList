@@ -9,6 +9,7 @@ import { HomePage } from '../pages/home/home';
 import {Globals} from '../app/datos/global';
 import { Media, MediaObject } from '@ionic-native/media';
 import { File } from '@ionic-native/file';
+import { FileTransfer, FileUploadOptions, FileTransferObject } from '@ionic-native/file-transfer';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,9 @@ import { File } from '@ionic-native/file';
     SplashScreen,
     Globals,
     File,
-    Media, 
+    Media,     
+    FileTransfer,
+    FileTransferObject,
     {provide: ErrorHandler, useClass: IonicErrorHandler}
   ]
 })
